@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "kong.link",
+    "type": "java.lang.String",
+    "description": "A description for 'kong.link'"
+  },
+  {
+    "name": "token.validade",
+    "type": "java.lang.String",
+    "description": "A description for 'token.validade'"
+  }
+]}
