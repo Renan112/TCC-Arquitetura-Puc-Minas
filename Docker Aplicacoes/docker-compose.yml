@@ -1,0 +1,51 @@
+version: '3'
+
+services:
+  associados:
+    image: associados:0.0.1
+     
+    ports:
+      - 8081:8081
+
+    networks:
+      - tcc-pos-net
+
+  comunicacaocomlegado:
+    image: comunicacaocomlegado:0.0.1
+     
+    ports:
+      - 8083:8083
+
+    networks:
+      - tcc-pos-net
+
+  controledeacesso:
+    image: controledeacesso:0.0.1
+     
+    ports:
+      - 8080:8080
+
+    networks:
+      - tcc-pos-net
+
+  conveniados:
+    image: conveniados:0.0.1
+     
+    ports:
+      - 8082:8082
+
+    networks:
+      - tcc-pos-net
+
+  salvardadosciencia:
+    image: salvardadosciencia:0.0.1
+     
+    ports:
+      - 8084:8084
+
+    networks:
+      - tcc-pos-net
+
+networks:
+  tcc-pos-net:
+    name: tcc-pos-net
